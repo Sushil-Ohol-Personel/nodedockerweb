@@ -4,6 +4,13 @@
   "description": "Nodejs Web App inside a Docker Container",
   "main": "app.js",
   "scripts": {
+    "build": "npm ci && npm run check-format && npm run license && npm run test && node ./scripts/build-orchestrator.js",
+    "test": "npx nyc mocha --timeout 5000 test/unit/**/*.test.js",
+    "test-integration": "cd test/integration && npm run test-integration",
+    "format": "prettier --write \"{src,test}/**/!(*.lint).js\"",
+    "check-format": "prettier --list-different \"{src,test}/**/!(*.lint).js\"",
+    "license": "eslint --ext js,ts src test tools scripts .",
+    "license-fix": "eslint --fix --ext js,ts src test tools scripts ."
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
