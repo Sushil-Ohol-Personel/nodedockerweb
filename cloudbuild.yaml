@@ -1,12 +1,12 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-    
- 
-
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['npx', 'sonar-scanner']
-    env:
-      - 'SONAR_TOKEN=${_SONAR_TOKEN}'
+    args: ['run', 'build']
+  - name: 'gcr.io/sonarcloud/sonar-scanner'
+    entrypoint: 'sonar-scanner'
+    args:
+      - '-Dsonar.host.url=https://sonarcloud.io'
+      - '-Dsonar.login=${_SONAR_TOKEN}' # Set your SonarCloud token here
 
 
