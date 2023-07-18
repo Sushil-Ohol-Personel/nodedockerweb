@@ -5,7 +5,7 @@ steps:
  
 
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['npm', 'sonar-scanner']
+    args: ['npx', 'sonar-scanner']
     env:
       - 'SONAR_TOKEN=${_SONAR_TOKEN}'
 
