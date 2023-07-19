@@ -1,26 +1,26 @@
 {
-  "name": "nodedockerweb",
-  "version": "1.0.0",
-  "description": "Nodejs Web App inside a Docker Container",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sushil-Ohol-Personel/nodedockerweb.git"
-  },
-  "author": "Sushil-Ohol",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sushil-Ohol-Personel/nodedockerweb/issues"
-  },
-  "homepage": "https://github.com/Sushil-Ohol-Personel/nodedockerweb#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "sonarqube-scanner": "^3.0.1"
-  }
+	"name": "nodedockerweb",
+	"version": "1.0.0",
+	"description": "Nodejs Web App inside a Docker Container",
+	"main": "app.js",
+	"scripts": {
+		"test": " echo \" Error: no test specified\" && exit 1",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sushil-Ohol-Personel/nodedockerweb.git"
+	},
+	"author": "Sushil-Ohol",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Sushil-Ohol-Personel/nodedockerweb/issues"
+	},
+	"homepage": "https://github.com/Sushil-Ohol-Personel/nodedockerweb#readme",
+	"dependencies": {
+		"express": "^4.18.2"
+	},
+	"devDependencies": {
+		"sonarqube-scanner": "^3.0.1"
+	}
 }
