@@ -3,7 +3,7 @@ steps:
     args: ['install']
   
   - name: "gcr.io/cloud-builders/npm:latest"
-    args: ['npm', 'run', 'build']
+    args: ['npx', 'run', 'build']
   - name: 'gcr.io/sonarcloud/sonar-scanner'
     entrypoint: 'sonar-scanner'
     args:
