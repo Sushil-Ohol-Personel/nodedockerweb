@@ -1,8 +1,8 @@
 steps:
-  - name: "gcr.io/cloud-builders/npm:node-12.18.3"
+  - name: "gcr.io/cloud-builders/npm:latest"
     args: ['install']
   
-  - name: "gcr.io/cloud-builders/npm:node-12.18.3"
+  - name: "gcr.io/cloud-builders/npm:latest"
     args: ['npm', 'run', 'build']
   - name: 'gcr.io/sonarcloud/sonar-scanner'
     entrypoint: 'sonar-scanner'
